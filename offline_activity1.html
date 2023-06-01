@@ -34,11 +34,11 @@
 			<input type="text" name="txtNumber" value="" size="20" /><br /><br/>
 			
 			<!-- Number buttons -->
-			<input type="button" value="1" name="btn1" id="but1" />
-			<input type="button" value="2" name="btn2" id="but2" />
+			<input type="button" value="1" name="btn1" id="but1" onclick="showNum(1)"/>
+			<input type="button" value="2" name="btn2" id="but2" onclick="showNum(2)"/>
 			<input type="button" value="3" name="btn3" onclick="showNum(3)" />
 			
-			<!-- ADD: Sets up operation to add current number to next number entered -->
+			<!-- Done - ADD: Sets up operation to add current number to next number entered -->
 			<input type="button" value="+" name="btnPlus" onclick="add()" /><br/>
 			
 			<!-- Number buttons -->
@@ -46,45 +46,45 @@
 			<input type="button" value="5" name="btn5" onclick="showNum(5)" />
 			<input type="button" value="6" name="btn6" onclick="showNum(6)" />
 			
-			<!-- *** Subtract (Implement Me!) *** -->
-			<input type="button" value="-" name="btnMinus" onclick="" onclick="" /><br/>
+			<!-- Done - *** Subtract (Implement Me!) *** -->
+			<input type="button" value="-" name="btnMinus" onclick="subtract()" /><br/>
 			
 			<!-- Number buttons -->
 			<input type="button" value="7" name="btn7" onclick="showNum(7)" />
 			<input type="button" value="8" name="btn8" onclick="showNum(8)" />
 			<input type="button" value="9" name="btn9" onclick="showNum(9)" />
 			
-			<!-- *** Multiply (Implement Me!) *** -->
-			<input type="button" value="*" name="btnTimes" onclick="" /><br/>
+			<!-- Done - *** Multiply (Implement Me!) *** -->
+			<input type="button" value="*" name="btnTimes" onclick="multiply()" /><br/>
 			
 			<!-- Number buttons -->
 			<input type="button" value="0" name="btn0" onclick="showNum(0)" />
 
-			<!-- *** Power (Implement Me!) Takes two values n^y *** -->
-			<input type="button" value="^" name="btnPow" onclick=""/>
+			<!-- Done - *** Power (Implement Me!) Takes two values n^y *** -->
+			<input type="button" value="^" name="btnPow" onclick="pow()"/>
 			
-			<!-- *** Power2 (Implement Me!) *** Takes one value n^2-->
-			<input type="button" value="^2" name="btnPow2" onclick=""/>
+			<!-- Done - *** Power2 (Implement Me!) *** Takes one value n^2-->
+			<input type="button" value="^2" name="btnPow2" onclick="pow2()"/>
 			
-			<!-- *** Divide (Implement Me!) *** -->
-			<input type="button" value="/" name="btnDivide" onclick=""/><br/>
+			<!-- Done - *** Divide (Implement Me!) *** -->
+			<input type="button" value="/" name="btnDivide" onclick="divide()"/><br/>
 			
-			<!-- Decrements value currently displayed (Implement Me!)-->
+			<!-- Done - Decrements value currently displayed (Implement Me!)-->
 			<input type="button" value="--" name="btnDecrement" onclick="decrement()" />
+
+			<!-- Done - Increments value currently displayed (Implement Me!)-->
+			<input type="button" value="++" name="btnIncrement" onclick="increment()" />
 			
-			<!-- *** Increment (Implement Me!) *** -->
-			<input type="button" value="++" name="btnIncrement" onclick=""/>
-			
-			<!-- *** Square Root (Implement Me!) *** -->
-			<input type="button" value="sqrt()" name="btnSqrt" onclick=""/><br />
+			<!-- Done - *** Square Root (Implement Me!) *** -->
+			<input type="button" value="sqrt()" name="btnSqrt" onclick="sqrt()"/><br />
 		   
-			<!-- Calculates the floor of the current number being displayed -->
-			<input type="button" value="Floor" name="btnFloor" onclick="" />     
+			<!-- Done - Calculates the floor of the current number being displayed -->
+			<input type="button" value="Floor" name="btnFloor" onclick="floor()" />     
 		 
-			<!-- *** Round (Implement Me!) *** -->
-			<input type="button" value="Round" name="btnRound" onclick=""/>
+			<!-- Done - *** Round (Implement Me!) *** -->
+			<input type="button" value="Round" name="btnRound" onclick="round()"/>
 			
-			<!-- *** Decimal (Implement Me!) *** -->
+			<!-- Done - *** Decimal (Implement Me!) *** -->
 			<input type="button" value="." name="btnDecimal" onclick="showNum('.')" />
 			
 			<br/><br/>
@@ -97,5 +97,3 @@
 	
 </body>
 </html>
-
-
